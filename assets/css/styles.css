@@ -845,8 +845,8 @@ color: #fff;
   background-color: var(--first-color-alt);
 }
 
-.scrollup-con{
-  font-size: 5.5rem;
+.scrollup-icon{
+  font-size: 2rem;
   color: #fff;
 }
 /* Show scroll */

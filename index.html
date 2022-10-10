@@ -1140,18 +1140,16 @@ costi di trasporto</p>
            <script>
             function sendEmail(){
             Email.send({
-              Host : "smtp.elasticemail.com",
-              Username : "gusinakosta@gmail.com",
-              Password : "1FED6A9AF0DDC69BE07C354835B7F8E34527",
-              To : "gusinakosta@gmail.com",
-              From : "gusinakosta@gmail.com",
+              SecureToken: " 9cc0b787-308d-4bd9-9ab9-babb079c191b",
+              To : "kostantinhusyna@yahoo.com",
+              From : "kostantinhusyna@yahoo.com",
               Subject : "Portfolio site message",
               Body : "Name: "+ document.getElementById("customerName").value
               +"<br> email: " + document.getElementById("email").value
               +"<br> topic: " + document.getElementById("topicMessage").value 
               +"<br> message: " + document.getElementById("message").value
           }).then(
-            message => alert(message)
+            message => alert("Message Sent Succesfully")
           );
           }
            </script>
@@ -1217,20 +1215,6 @@ costi di trasporto</p>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-      /*const langEl = document.querySelector('.language__wrap');
-      const link = document.querySelectorAll('a');
-      const titleEl = document.querySelector('.home__title');
-
-      link.forEach(el =>{
-        el.addEventListener('click', ()=>{
-          langEl.querySelector('.active').classList.remove('active');
-          el.classList.add('active');
-
-          const attr = el.getAttribute('language');
-          titleEl.textContent = languageData[attr].home__title;
-
-        })
-      });*/
 
       $(function(){
         $('.translate').click(function(){

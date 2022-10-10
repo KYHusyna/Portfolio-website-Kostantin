@@ -4,7 +4,6 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
-
   /*========== Colors ==========*/
   /* Change favorite color */
   --hue-color: 230;
@@ -168,13 +167,14 @@ img {
 }
 
 .nav__logo,
-.nav__toggle {
+.nav__toggle,
+.translate {
   color: var(--title-color);
   font-weight: var(--font-medium);
-  height: 3.5rem;
+  height: 1.5rem;
 }
 
-.nav__logo:hover {
+.nav__logo:hover, .translate:hover {
   color: var(--first-color);
 }
 
@@ -394,12 +394,16 @@ img {
 .about__description {
   text-align: left;
   margin-bottom: var(--mb-2-5);
+  white-space: pre;
 }
 
 .about__info {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
+}
+.year__exp{
+  white-space: pre;
 }
 
 .about__info-title {
@@ -477,6 +481,10 @@ img {
   font-size: var(--h3-font-size);
 }
 
+.skills__title:hover{
+  color: var(--first-color);
+}
+
 .hard__skills {
   font-size: var(--h3-font-size);
   color: var(--mb-0-75);
@@ -521,7 +529,12 @@ img {
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  display: block;
+  text-align: center;
+ }
+
+.graduation__qualification{
+  white-space: pre;
 }
 
 .qualification__button {
@@ -592,6 +605,10 @@ img {
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.customer__services{
+white-space: pre;
 }
 
 .services__content {
@@ -688,16 +705,10 @@ img {
 
 
 /*==================== PORTFOLIO ====================*/
-/*.project__img{
-  width: 165px;
-  border-radius: .5rem;
-  justify-self: center;
-}
+/*.proj__info{
+white-space: pre;
+}*/
 
-.hidden{
-  visibility: hidden;
-}
-*/
 .portfolio__container {
   overflow: initial;
 }
@@ -904,7 +915,7 @@ color: #fff;
 
   .services__content{
     size: var(--mb-1);
-    padding-right: 3.5rem;
+    /*padding-right: 3.5rem;*/
   }
   
   .services__modal{
@@ -928,11 +939,15 @@ color: #fff;
   }
 
   .about__container,
-  .skills__container,
+  /*.skills__container,*/
   .portfolio__content,
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills__container{
+    grid-template-columns: repeat(2, 5fr);
   }
 
   .qualification__sections{

@@ -130,4 +130,15 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== lenguages ====================*/ 
+var languageData={
+    "english":{
+        "home__title": "Welcome"
+    },
+    "italian":{
+        "home__title": "Benvenuto"
+    },
+    "ukrainian":{
+        "home__title": "Ласкаво прошу"
+    }
+}

@@ -16,13 +16,20 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Sito Web portfolio reattivo</title>
+    <title class=" lang" key="site__name">Sito Web portfolio</title>
+   
   </head>
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Kostantino</h2></a>
+        <a href="#" class="nav__logo lang" key="name">Kostantino</h2></a>
+       
+        <div class="language__wrap">
+        <a href="#" id="english" class="translate active">EN</a>
+        <a href="#" id="italian" class="translate">IT</a>
+        <a href="#" id="ukrainian" class="translate">UA</a>
+      </div> 
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -30,44 +37,43 @@
             <li class="nav_item">
               <a href="#home" class="nav__link active-link">
                 
-                <i class="uil uil-estate nav__icon"></i>Pagina iniziale<!--Home--> 
+                <i class="uil uil-estate nav__icon lang" key="home_nav"></i>
+                <p class="lang" key="home__nav">Pagina iniziale</p> 
               </a>
             </li>
-
-         <!--   <li class="nav_item">
-              <a href="#navigation" class="nav__link">
-                <i class="uil uil-map nav__icon"></i> Navigation
-              </a>
-            </li>
-            -->
 
             <li class="nav_item">
               <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>Su di me<!--About-->
+                <i class="uil uil-user nav__icon"></i>
+                <p class="lang" key="about__nav">Su di me</p>
               </a>
             </li>
 
             <li class="nav_item">
               <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>Abilità<!-- Skills -->
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p class="lang" key="skills__nav">Abilità</p>
               </a>
             </li>
 
             <li class="nav_item">
               <a href="#services" class="nav__link">
-                <i class="uil uil-clipboard nav__icon"></i>Servizi<!-- Services -->
+                <i class="uil uil-clipboard nav__icon"></i>
+                <p class="lang" key="services__nav">Servizi</p>
               </a>
             </li>
 
             <li class="nav_item">
               <a href="#portfolio" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Progetti<!-- Portfolio -->
+                <i class="uil uil-briefcase-alt nav__icon"></i>
+                <p class="lang" key="portfolio__nav">Progetti</p>
               </a>
             </li>
 
             <li class="nav_item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contattami<!-- Contact Me -->
+                <i class="uil uil-message nav__icon"></i>
+                <p class="lang" key="contactme__nav">Contattami</p>
               </a>
             </li>
             
@@ -140,24 +146,21 @@
             </div>
 
             <div class="home__data">
-              <h2 class="home__title">Benvenuto <!-- Welcome -->!</h2>
-              <p class="home__creeting">
+
+
+              <h2 class="home__title lang" key="home__title" >Benvenuto!</h2>
+              <p class="home__creeting lang" key="home__creeting">
                 Sono Konstantin, ho creato questa pagina per mostrare le mie capacità ed esperienza
-                <!-- I am Konstantin, I created this page to show my skills and experience --> 
               </p>
               <br />
-              <p class="home__description">
+              <p class="home__description lang" key="home__description" >
                 Ci sono molte cose interessanti nel mondo, e tutte hanno dei cicli,
                 devi solo riconoscerli.
                Quindi troviamo un algoritmo per il successo congiunto con te e cicli questo
-                <!-- There are many interesting things in the world, and they all have cycles,
-                 you just have to recognize them. 
-                So let's find an algorithm for joint success with you and loop it -->
               </p>
               <a href="#contact" class="button button--flex">
-                Contattami
-                <!-- Contact Me -->
-                 <i class="uil uil-message"></i>
+                <p class="lang" key="contact__btn">Contattami </p>
+                 <i class="uil uil-message button__icon"></i>
               </a>
             </div>
           </div>
@@ -165,8 +168,8 @@
           <div class="home__scroll">
             <a href="#about" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-              <span class="home__scroll-name">
-                Scorrere verso il basso<!-- Scroll down --></span>
+              <span class="home__scroll-name lang" key="home__scroll">
+                Scorrere verso il basso</span>
               <i class="uil uil-arrow-down home__scroll-arrow"></i>
             </a>
           </div>
@@ -175,8 +178,8 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-            <h2 class="section__title">Su di me<!-- About Me --></h2>
-        <span class="section__subtitle">La mia introduzione<!-- My introduction --></span>
+            <h2 class="section__title lang" key="about__title">Su di me</h2>
+        <span class="section__subtitle lang" key="about__subtitle">La mia introduzione</span>
         
         <div class="about__container container grid">
           <div class="about__img">
@@ -211,18 +214,17 @@
            <div class="about__info">
             <div>
               <span class="about__info-title">1+</span>
-              <span class="about__info-name">Anno<!-- Year --> <br>
-                Java Esperienza <!-- Experience --></span>
+              <span class="about__info-name year__exp lang" key="year__exp"> Anno <br> Java Esperienza</span>
             </div>
           
             <div>
               <span class="about__info-title">20+</span>
-              <span class="about__info-name">Progetti<!-- Projects --></span>
+              <span class="about__info-name lang" key="projects__count">Progetti</span>
             </div>
           
             <div>
             <span class="about__info-title">4</span>
-            <span class="about__info-name">Le lingue<!-- Languages --></span>
+            <span class="about__info-name lang" key="language__count">Le lingue</span>
             </div>
            </div>
           
@@ -231,24 +233,17 @@
 
          <div class="about__data">
 
-          <h2 class="about__subtitle">
-            Sono una persona universale
-            <!-- I am a universal person --></h2>
-          <p class="about__description">
-            Sviluppo di soluzioni software e Process automation <br>
-            Soluzioni di marketing<br />
-            Gestione dei social network <br />
-            Sì, è tutto su di me!
-            <!--  Development of software solutions and Process automation <br>
-           Marketing solutions<br />
-           Management of social networks <br />
-           Yeah thats all about me! -->
-           
-           </p>
+          <h2 class="about__subtitle lang" key="about__description">
+            Sono una persona universale</h2>
+          <p class="about__description lang" key="about__info">
+Sviluppo di soluzioni software e Process automation
+Soluzioni di marketing
+Gestione dei social network
+Sì, è tutto su di me!</p>
 
           <div class="about__buttons">
-           <a href="assets/pdf/Kostantin_Husyna_CV_ITA.pdf" class="button button--flex" download="KOSTANTIN_HUSYNA_CV_ENG">
-            Scarica CV<!-- Download CV --> 
+           <a href="assets/pdf/Kostantin_Husyna_CV_ITA.pdf" class="button button--flex lang" download="KOSTANTIN_HUSYNA_CV_ENG">
+            <p class="lang" key="download__cv">Scarica CV</p> 
               <i class="uil uil-download-alt button__icon"></i>
            </a>
           </div>
@@ -259,10 +254,10 @@
 
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
-          <h2 class="section__title">Abilità<!-- Skills --></h2>
-          <span class="section__subtitle">Mia Abilità <!-- My skills --></span>
+          <h2 class="section__title lang" key="skills__title">Abilità</h2>
+          <span class="section__subtitle lang" key="skills__subtitle">Mia Abilità</span>
 
-          <h3 class="section__title hard__skills">Conoscenza professionale<!-- Hard skills --></h3> <br>
+          <h3 class="section__title hard__skills lang" key="hard__skills">Conoscenza professionale</h3> <br>
             <div>
           <div class="skills__container container grid">
               <!--==================== SKILLS 1 ====================-->
@@ -271,16 +266,17 @@
                   <i class="uil uil-database skills__icon"></i>
 
                   <div>
-                    <h1 class="skills__title  hard__skills">Banche dati<!-- Databases --></h1>
-                    <span class="skills__subtitle">ambiente di sviluppo e linguaggi di interrogazione<!-- development environment and query languages --></span>
+                    <h1 class="skills__title  hard__skills lang" key="database__skill">Banche dati</h1>
+                    <span class="skills__subtitle lang" key="database__subtitle">Ambiente di sviluppo e linguaggi di interrogazione</span>
                   </div>
 
                     <i class="uil uil-arrow-down skills__arrow"></i>
                 </div>
 
-                <div class="skills__list grid"><p class="about__skill">
-                  Il database è una raccolta organizzata di dati archiviati e accessibili elettronicamente
-               <!-- Database is an organized collection of data stored and accessed electronically --> </p>
+                <div class="skills__list grid">
+                  <p class="about__skill lang about__database" key="about__database">
+Il database è una raccolta organizzata di dati 
+archiviati e accessibili elettronicamente </p>
                      
                   <div class="skills__data">
                     <div class="skills__titles">
@@ -322,17 +318,16 @@
                     <i class="uil uil-list-ul skills__icon"></i>
   
                     <div>
-                      <h1 class="skills__title  hard__skills">Principi di programmazione<!-- Programing Principles --></h1>
+                      <h1 class="skills__title  hard__skills lang" key="prog__principle">Principi di programmazione</h1>
                     </div>
   
                       <i class="uil uil-arrow-down skills__arrow"></i>
                   </div>
   
-                  <div class="skills__list grid"><p class="about__skill">
+                  <div class="skills__list grid">
+                    <p class="about__skill lang" key="about__principle">
                     I principi sono utilizzati per la progettazione e lo sviluppo di sistemi software che
                     può essere sviluppato, ampliato e mantenuto a lungo
-                    <!-- The principles are used for the design and development of software systems that
-                     can be developed, expanded and maintained for a long time -->
                     </p>
                        
                     <div class="skills__data">
@@ -358,28 +353,26 @@
                     <i class="uil uil-sitemap skills__icon"></i>
   
                     <div>
-                      <h1 class="skills__title hard__skills">Architettura<!-- Architecture --></h1>
-                      <span class="skills__subtitle">
-                        Progettazione dell'architettura del programma<!-- Projecting program architecture --></span>
+                      <h1 class="skills__title hard__skills lang" key="architect__skill">Architettura</h1>
+                      <span class="skills__subtitle lang " key="architect__subtitle">
+                        Progettazione dell'architettura del programma</span>
                     </div>
   
                       <i class="uil uil-arrow-down skills__arrow"></i>
                   </div>
   
-                  <div class="skills__list grid"><p class="about__skill">
-                    L'architettura di proiezione sta ottimizzando il flusso di lavoro del programma
-                     <!-- Projecting architecture is optimizing program workflow --></p>
+                  <div class="skills__list grid">
+                    <p class="about__skill lang" key="about__architect">
+                    L'architettura di proiezione sta ottimizzando il flusso di lavoro del programma</p>
                        
                     <div class="skills__data">
                       <div class="skills__titles">
                          <h3 class="skills__name">
-                          <li>MVC architettura <!-- architecture --></li>
+                          <li class="lang" key="mvc">MVC architettura</li>
                         </h3>
-                        <span class="skill__description  skill__mvc">Model-View-Controller 
+                        <span class="skill__description  skill__mvc lang" key="mvc__about" >Model-View-Controller 
                           -odello utilizzato per implementare le interfacce utente,
-                          dati e logica di controllo
-                          <!--  pattern which used to implement user interfaces, 
-                          data, and controlling logic --></span>
+                          dati e logica di controllo</span>
                       </div>
                     </div>
                     <div class="skills__data">
@@ -387,9 +380,9 @@
                        <h3 class="skills__name">
                         <li>DAO</li>
                       </h3>
-                      <span class="skill__description  skill__mvc">Data Access Object  
+                      <span class="skill__description  skill__mvc lang" key="dao_info">Data Access Object  
                         - isolare il livello applicativo/aziendale dal livello di persistenza
-                        <!-- isolation the application/business layer from the persistence layer --></span>
+                        </span>
                     </div>
                       </div>
                     </div>
@@ -401,9 +394,9 @@
                   <i class="uil uil-browser skills__icon"></i>
 
                   <div>
-                    <h1 class="skills__title hard__skills">Sviluppo web<!-- WEB Development --></h1>
-                    <span class="skills__subtitle">Creazione di siti web o applicazioni web
-                      <!--  Creating websites or web applications --></span>
+                    <h1 class="skills__title hard__skills lang" key="web__skill">Sviluppo web</h1>
+                    <span class="skills__subtitle lang" key="web__subtitle">Creazione di siti web o applicazioni web
+                     </span>
                   </div>
 
                   <i class="uil uil-arrow-down skills__arrow"></i>
@@ -412,9 +405,8 @@
 
                 <div class="skills__list grid">
 
-                  <p class="about__skill">
+                  <p class="about__skill lang" key="web__info">
                     Linguaggi di sviluppo web
-                    <!-- Web development languages -->
                     </p>
 
                   <div class="skills__data">
@@ -456,14 +448,14 @@
 
                 <div class="skills__list grid">
 
-                  <p class="about__skill">
+                  <p class="about__skill lang" key="salesforce__info">
                    
-                    Conoscenza di<!-- Knowledge of --> trailheads</p>
+                    Conoscenza di trailheads</p>
 
                   <div class="skills__data">
                     <div class="skills__titles">
                        <h3 class="skills__name">
-                        <li>Amministratore principiante<!--Administrator beginner --></li>
+                        <li class ="lang" key="admin">Amministratore principiante</li>
                       </h3>
                     </div>
                   </div>
@@ -471,7 +463,7 @@
                   <div class="skills__data">
                     <div class="skills__titles">
                      <h3 class="skills__name">
-                      <li>Sviluppatore principiante<!-- Developer beginner --></li>
+                      <li class ="lang" key="dev">Sviluppatore principiante</li>
                     </h3>
                     </div>
 
@@ -479,8 +471,7 @@
                   <div class="skills__data">
                     <div class="skills__titles">
                      <h3 class="skills__name">
-                      <li>Nozioni di base sui componenti Aura
-                        <!-- Aura components basics --></li>
+                      <li class ="lang" key="aura">Nozioni di base sui componenti Aura</li>
                     </h3>
                     </div>
                   </div>
@@ -488,7 +479,7 @@
                   <div class="skills__data">
                     <div class="skills__titles">
                      <h3 class="skills__name">
-                      <li>Costruisci componenti Web lightning<!-- Build lightning Web components --></li>
+                      <li class ="lang" key="lwc">Costruisci componenti Web lightning</li>
                     </h3>
                     </div>
                   </div>
@@ -502,7 +493,7 @@
                     <i class="uil uil-english-to-chinese skills__icon"></i>
   
                     <div>
-                      <h1 class="skills__title  hard__skills">Le lingue<!-- Languages --></h1>
+                      <h1 class="skills__title  hard__skills lang" key="language__skill">Le lingue</h1>
                     </div>
   
                       <i class="uil uil-arrow-down skills__arrow"></i>
@@ -513,7 +504,7 @@
                     <div class="skills__data">
                       <div class="skills__titles">
                          <h3 class="skills__name">
-                          <li>Inglese: superiore - intermedio<!-- English:  Upper - Intermediate --></li>
+                          <li class ="lang" key="eng">Inglese: superiore - intermedio</li>
                         </h3>
                       </div>
                     </div>
@@ -521,7 +512,7 @@
                     <div class="skills__data">
                       <div class="skills__titles">
                        <h3 class="skills__name">
-                        <li>Italia: principiante<!-- Italy: Beginner --></li>
+                        <li class ="lang" key="ita">Italia: principiante</li>
                       </h3>
                      </div>
                   </div>
@@ -529,7 +520,7 @@
                   <div class="skills__data">
                     <div class="skills__titles">
                      <h3 class="skills__name">
-                      <li>Ucraino: madrelingua<!-- Ukrainian: Native speaker --></li>
+                      <li class ="lang" key="ua">Ucraino: madrelingua</li>
                     </h3>
                    </div>
                 </div>
@@ -537,7 +528,7 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                    <h3 class="skills__name">
-                    <li>Russo: avanzato<!-- Russian: Advanced --></li>
+                    <li class ="lang" key="rus">Russo: avanzato</li>
                   </h3>
                  </div>
               </div>
@@ -552,9 +543,9 @@
                     <i class="uil uil-brackets-curly skills__icon"></i>
   
                     <div>
-                      <h1 class="skills__title  hard__skills">Conoscenza importante<!-- Important knowledge --></h1>
-                      <span class="skills__subtitle">
-                        Tu devi vederlo <!-- You must see it -->!</span>
+                      <h1 class="skills__title  hard__skills lang" key="important__knowledge">Conoscenza importante</h1>
+                      <span class="skills__subtitle lang" key ="knowledge__subtitle">
+                        Tu devi vederlo !</span>
                     </div>
   
                     <i class="uil uil-arrow-down skills__arrow"></i>
@@ -565,11 +556,10 @@
                     <div class="skills__data">
                       <div class="skills__titles">
                          <h3 class="skills__name">
-                          <li>Programmazione dinamica<!-- Dynamic Programing --></li>
+                          <li class ="lang" key="dynamic__prog">Programmazione dinamica</li>
                         </h3>
-                        <span class="skill__description  skill__Dynamic-porgraming">
-                          semplificare un problema complesso suddividendolo in compiti più semplici, in modo ricorsivo
-                          <!-- simplifying a complex problem by dividing it into simpler tasks, in a recursive way -->
+                        <span class="skill__description  skill__Dynamic-porgraming lang" key="dynamic__info">
+                          Semplificare un problema complesso suddividendolo in compiti più semplici, in modo ricorsivo
                           </span>
                       </div>
                     </div>
@@ -577,14 +567,11 @@
                     <div class="skills__data">
                       <div class="skills__titles">
                        <h3 class="skills__name">
-                        <li>Interfacce<!-- Interfaces --></li>
+                        <li class ="lang" key="interfaces">Interfacce</li>
                       </h3>
-                      <span class="skill__description  skill__mvc">
-                       Java Swing  <br>
-                     C# Form <br> 
-                     Un insieme di strumenti per creare un'interfaccia grafica nelle lingue appropriate
-                     <!-- A set of tools for creating a graphical interface in the appropriate languages -->
-                       
+                      <span class="skill__description  skill__interface">Java Swing <br>
+                        C# Form <br>
+                        <p class="lang"  key="interfaces__info">Un insieme di strumenti per creare un'interfaccia grafica nelle lingue appropriate </p>                       
                       </span>
                     </div>
                       </div>
@@ -592,7 +579,7 @@
                       <div class="skills__data">
                         <div class="skills__titles">
                            <h3 class="skills__name">
-                            <li>Soluzioni di marketing<!-- Marketing solutions --></li>
+                            <li class ="lang" key="marketing">Soluzioni di marketing</li>
                           </h3>
                           </div>
                       </div>
@@ -609,7 +596,7 @@
                       <div class="skills__data">
                         <div class="skills__titles">
                            <h3 class="skills__name">
-                            <li>Design Creazione<!-- Creation --></li>
+                            <li class ="lang" key="design">Design Creazione</li>
                           </h3>
                           </div>
                       </div>
@@ -620,7 +607,7 @@
             </div>
           </div>
 
-          <h3 class="section__title hard__skills">Abilità personali<!-- Soft skills --></h3> <br>
+          <h3 class="section__title hard__skills lang" key="soft__skills"> Abilità personali</h3> <br>
           <!--==================== Soft SKILLS 1 ====================-->
           <div>
             <div>
@@ -629,44 +616,42 @@
                 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Amichevole
-                  <!-- Friendly --></h1>
+                <h1 class="skills__title soft__skills lang" key="friendly">Amichevole</h1>
               </div>
               <i class="uil uil-smile skills__icon-soft"></i>
             </div>
 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Apprendimento superiore<!-- Higher learning --></h1>
+                <h1 class="skills__title soft__skills lang" key="higher__learning">Apprendimento superiore</h1>
               </div>
               <i class="uil uil-books skills__icon-soft"></i>
             </div>
 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Risolutore di problemi<!-- Problem resolver --></h1>
+                <h1 class="skills__title soft__skills lang" key="problem__solving">Risolutore di problemi</h1>
               </div>
               <i class="uil uil-wrench skills__icon-soft"></i>
             </div>
 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Potente e tenace<!-- Powerful and persistence --></h1>
+                <h1 class="skills__title soft__skills lang" key="powerful">Potente e tenace</h1>
               </div>
               <i class="uil uil-clipboard-notes skills__icon-soft"></i>
             </div>
 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Pensiero critico<!-- Critical thinking --></h1>
+                <h1 class="skills__title soft__skills lang" key="critical__think">Pensiero critico</h1>
               </div>
               <i class="uil uil-bolt skills__icon-soft"></i>
             </div>
 
             <div class="skills__header-soft">
               <div>
-                <h1 class="skills__title soft__skills">Intelligenza emotiva
-                  <!-- Emotional intelligence --></h1>
+                <h1 class="skills__title soft__skills lang" key="emotional__intelligence">Intelligenza emotiva</h1>
               </div>
               <i class="uil uil-brain skills__icon-soft"></i>
             </div>
@@ -679,20 +664,23 @@
 
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section">
-        <h2 class="section__title">Qualificazione<!-- Qualification--></h2>
-        <span class="section__subtitle">Il mio viaggio personale<!-- My personal journey --></span>
+        <h2 class="section__title lang" key="qualification__title">Qualificazione</h2>
+        <span class="section__subtitle lang" key="qualification__subtitle">Il mio viaggio personale</span>
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
 
             <div class="qualification__button button--flex qualification__active" data-target="#education">
             <i class="uil uil-graduation-cap qualification__icon"></i>
-            Software <br> Ingegneria <br> Educazione<!-- Software <br> Engineering <br> Education --> 
-          </div>
+            <p class="graduation__qualification lang" key="graduation__qualification"> Software <br> Ingegneria <br> Educazione</p>
+          
+          <p class="hidden">---</p>
+        </div>
+
 
           <div class="qualification__button button--flex" data-target="#work">
             <i class="uil uil-briefcase qualification__icon"></i>
-            lavoro<!-- Work -->  
+            <p class="lang" key ="work__qualification">lavoro</p>  
           </div>
           </div>
 
@@ -703,7 +691,7 @@
              <!--==================== QUALIFICATION 1====================-->
              <div class="qualification__data" >
               <div>
-                <h3 class="qualification__title">Personale - Progetti del corso<!-- Personal - Course Projects --></h3>
+                <h3 class="qualification__title lang" key="solo__proj">Personale - Progetti del corso</h3>
                 <span class="qualification__subtitle">Kharkiv Aerospace University </span>
             </div>
             
@@ -723,7 +711,7 @@
             </div>
 
               <div>
-                <h3 class="qualification__title">Progetto del corso di squadra<!-- Team - Course Projects --></h3>
+                <h3 class="qualification__title lang" key="team__proj">Progetto del corso di squadra</h3>
                 <span class="qualification__subtitle">Kharkiv Aerospace University </span>
             </div>
            </div>
@@ -732,7 +720,7 @@
              <div class="qualification__data">
 
               <div>
-                <h3 class="qualification__title">Test e progetti aziendali<!-- Tests and projects from companies --></h3>
+                <h3 class="qualification__title lang" key="company__proj">Test e progetti aziendali</h3>
                 <span class="qualification__subtitle">Kharkiv Aerospace University </span>
             </div>
 
@@ -752,7 +740,7 @@
           </div>
             
             <div>
-              <h3 class="qualification__title">Progetti per la casa<!-- Pet projects -->  </h3>
+              <h3 class="qualification__title lang" key="pet__proj">Compiti di prova</h3>
               <span class="qualification__subtitle">Kharkiv Aerospace University </span>
           </div>
            </div>
@@ -767,9 +755,8 @@
             <!--==================== QUALIFICATION 1====================-->
             <div class="qualification__data">
              <div>
-               <h3 class="qualification__title">Compiti di prova<!-- Pet projects --></h3>
-               <span class="qualification__subtitle">Acquisire esperienza durante la risoluzione di compiti di test
-                <!-- Gaining experience while solving test tasks --></span>
+               <h3 class="qualification__title lang" key="pet__proj">Compiti di prova</h3>
+               <span class="qualification__subtitle lang" key="pet__info">Acquisire esperienza durante la risoluzione di compiti di test</span>
                <span class="hidden">-</span>
            </div>
            
@@ -789,9 +776,8 @@
            </div>
 
              <div>
-               <h3 class="qualification__title">Tirocinio<!-- Traineeship --></h3>
-               <span class="qualification__subtitle">Disciplina, relazioni commerciali e gestione del tempo
-                <!-- Discipline, business relations and time management --></span>
+               <h3 class="qualification__title lang" key="traieeshep">Tirocinio</h3>
+               <span class="qualification__subtitle lang" key="traieeshep__info">Disciplina, relazioni commerciali e gestione del tempo</span>
                <span class="hidden">-</span>
            </div>
           </div>
@@ -800,9 +786,8 @@
             <div class="qualification__data">
              
              <div>
-               <h3 class="qualification__title">Progetti commerciali<!-- Commercial Projects --></h3>
-               <span class="qualification__subtitle">Copertura delle esigenze del cliente, impostazioni per facilità d'uso
-                <!-- Coverage of customer needs, settings for ease of use --></span>
+               <h3 class="qualification__title lang" key="comercial__proj">Progetti commerciali</h3>
+               <span class="qualification__subtitle lang" key="comercial__info">Copertura delle esigenze del cliente, impostazioni per facilità d'uso</span>
                <span class="hidden">-</span>
            </div>
 
@@ -820,54 +805,51 @@
 
       <!--==================== SERVICES ====================-->
       <section class="services section" id="services">
-        <h2 class="section__title">Servizi<!-- Services --></h2>
-        <span class="section__subtitle">Cosa offro<!-- What i Offer --></span>
+        <h2 class="section__title lang" key="services__title">Servizi</h2>
+        <span class="section__subtitle lang" key="services__subtitle">Cosa offro</span>
 
         <div class="services__container container grid">
           <!--==================== SERVICES 1 ====================-->
           <div class="services__content">
             <div>
             <i class="uil uil-keyboard services__icon"></i>
-            <h3 class="services__title">Programmazione<!-- Programing --></h3>
+            <h3 class="services__title lang" key="prog__service">Programmazione</h3>
           </div>
 
           <span class="button button--flex button--small button--link services__button">
-            Visualizza di più<!-- View More -->
+            <p class="lang" key="view__more"> Visualizza di più</p>
             <i class="uil uil-arrow-right"></i>
           </span>
 
           <div class="services__modal">
             <div class="services__modal-content">
-              <h4 class="services__modal-title">Programmazione<!-- Programing --></h4>
+              <h4 class="services__modal-title lang" key="prog__service">Programmazione</h4>
               <i class="uil uil-times services__modal-close"></i>
 
               <ul class="services__modal-services grid">
                 <li class="services__modal-service">
                   <i class="uil uil-check-circle"></i>
-                  <p>Scrittura di programmi con approccio SOLIDO e orientato agli oggetti
-                    <!-- Writing program using SOLID and object oriented - approach --></p>
+                  <p class="lang" key="prog__principles">Scrittura di programmi con approccio SOLID e orientato agli oggetti</p>
                 </li>
 
                 <li class="services__modal-service">
                   <i class="uil uil-check-circle"></i>
-                  <p>Architettura MVC progettata utilizzando il modello DAO e la connessione al database
-                    <!-- Projected MVC architecture using DAO pattern and connecting to database --></p>
+                  <p class="lang" key="prog__architecture">Architettura MVC progettata utilizzando il modello DAO e la connessione al database</p>
                 </li>
 
                 <li class="services__modal-service">
                   <i class="uil uil-check-circle"></i>
-                  <p>Creazione dell'interfaccia utente da parte di Swing
-                    <!-- Creating user interface by Swing --></p>
+                  <p class="lang" key="prog__interface">Creazione dell'interfaccia utente</p>
                 </li>
 
                 <li class="services__modal-service">
                   <i class="uil uil-check-circle"></i>
-                  <p>Operazioni CRUD con database da IDE<!-- CRUD operations with database from IDE --></p>
+                  <p class="lang" key="database__operations">Operazioni CRUD con database da IDE</p>
                 </li>
 
                 <li class="services__modal-service">
                   <i class="uil uil-check-circle"></i>
-                  <p>Scrivere siti semplici<!-- Writing simple sites --></p>
+                  <p class="lang" key="site__creation">Scrivere siti semplici</p>
                 </li>
 
               </ul>
@@ -885,7 +867,7 @@
         </div>
 
         <span class="button button--flex button--small button--link services__button">
-          Visualizza di più<!-- View More -->
+          <p class="lang" key="view__more"> Visualizza di più</p>
           <i class="uil uil-arrow-right"></i>
         </span>
 
@@ -897,20 +879,17 @@
             <ul class="services__modal-services grid">
               <li class="services__modal-service">
                 <i class="uil uil-check-circle"></i>
-                <p>Creazione e personalizzazione di base dell'applicazione, come amministratore principiante
-                  <!-- Creating and basic customization application, like Administrator beginner --></p>
+                <p class="lang" key="admin__services">Creazione e personalizzazione di base dell'applicazione, come amministratore principiante</p>
               </li>
 
               <li class="services__modal-service">
                 <i class="uil uil-check-circle"></i>
-                <p>Controllo del flusso di lavoro, come Developer principiante
-                  <!-- Controlling workflow, like Developer beginner --></p>
+                <p class="lang" key="dev__services">Controllo del flusso di lavoro, come Developer principiante</p>
               </li>
 
               <li class="services__modal-service">
                 <i class="uil uil-check-circle"></i>
-                <p>Sviluppo e personalizzazione di base: componente LWC e Aura
-                  <!-- Basic development and customization: LWC and Aura component --></p>
+                <p class="lang" key="component__services">Sviluppo e personalizzazione di base: componente LWC e Aura</p>
               </li>
             </ul>
 
@@ -923,30 +902,29 @@
        <div class="services__content">
         <div>
           <i class="uil uil-user-arrows services__icon"></i>
-        <h3 class="services__title">Contenuti e coinvolgimento del cliente
-          <!-- Content and customer engagement --></h3>
-      </div>
+        <h3 class="services__title lang customer__services" key="customer__services">Contenuti 
+e coinvolgimento
+del cliente</div>
 
       <span class="button button--flex button--small button--link services__button">
-        Visualizza di più<!-- View More --> 
+       <p class="lang" key="view__more">Visualizza di più</p> 
         <i class="uil uil-arrow-right"></i>
       </span>
 
       <div class="services__modal">
         <div class="services__modal-content">
-          <h4 class="services__modal-title">Contenuti e coinvolgimento del cliente
-            <!-- Content and customer engagement --></h4>
+          <h4 class="services__modal-title lang" key="customer__service">Contenuti e coinvolgimento del cliente</h4>
           <i class="uil uil-times services__modal-close"></i>
 
           <ul class="services__modal-services grid">
             <li class="services__modal-service">
               <i class="uil uil-check-circle"></i>
-              <p>Soluzioni di marketing<!-- Marketing solutions --></p>
+              <p class="lang" key="marketing">Soluzioni di marketing</p>
             </li>
 
             <li class="services__modal-service">
               <i class="uil uil-check-circle"></i>
-              <p>Design Creazione<!-- Design development --></p>
+              <p class="lang" key="design">Design Creazione</p>
             </li>
 
             <li class="services__modal-service">
@@ -961,12 +939,13 @@
 
     </div>
     </div>
+
       </section>
 
       <!--==================== PORTFOLIO ====================-->
       <section class="portfolio section" id="portfolio"> 
-        <h2 class="section__title">Progetti<!-- Portfolio --></h2>
-        <span class="section__subtitle">Progetto più recente<!-- Most recent project --></span>
+        <h2 class="section__title lang" key="portfolio__title">Progetti</h2>
+        <span class="section__subtitle lang" key="portfolio__subtitle">Progetto più recente</span>
 
        <div class="portfolio__container container">
           <div>
@@ -976,12 +955,10 @@
 
                   
                   <div class="potfolio__data">
-                    <h3 class="portfolio__title">Consegna più economica<!-- Most cheap delivery --></h3>
-                    <p class="portfolio__description">
+                    <h3 class="portfolio__title lang" key="cheap__delivery">Consegna più economica</h3>
+                    <p class="portfolio__description lang" key="proj__description">
                       Un programma che prende: quantità in stock e ordini nei supermercati,
-                       e calcola il piano di consegna più economico
-                       <!-- A program that takes: quantities in stock and orders in supermarkets, 
-                      and calculates the cheapest delivery plan --></p>
+                       e calcola il piano di consegna più economico</p>
                     </div>
                       </div>
                </div>
@@ -995,30 +972,26 @@
             <div class="services__content">
               <div>
               <i class="uil uil-clipboard-notes services__icon"></i>
-              <h3 class="services__title">Informazioni sul progetto<!-- About Project --></h3>
+              <h3 class="services__title lang" key="info__subtitle">Informazioni sul progetto</h3>
             </div>
   
             <span class="button button--flex button--small button--link services__button">
-              Visualizza di più<!-- View More -->
+              <p class="lang" key="view__more"> Visualizza di più</p>
               <i class="uil uil-arrow-right"></i>
             </span>
   
             <div class="services__modal">
               <div class="services__modal-content">
-                <h4 class="services__modal-title">Informazioni sul progetto<!-- About Project --></h4>
+                <h4 class="services__modal-title lang" key="info__subtitle">Informazioni sul progetto</h4>
                 <i class="uil uil-times services__modal-close"></i>
   
                 <ul class="services__modal-services grid">
-                  Risolvere il problema del piano ottimale per il trasporto del/i prodotto/i
-                                dai punti di partenza ai punti di consumo. <br>
-                                Lo sviluppo e l'uso di schemi di flusso di carico ottimali consentono di ridurre
-                                 costi di trasporto
-                  <!-- Solving the problem of the optimal plan for transporting the product (s)
-                               from the points of departure to the points of consumption. <br>
-                               The development and use of optimal cargo flow schemes allow to reduce
-                                transportation costs --></p>  
+<p class="lang" key="proj__info1"> Risolvere il problema del piano ottimale per il trasporto del/i
+ prodotto/i dai punti di partenza ai punti di consumo. </p>
+<p class="lang" key="proj__info2"> Lo sviluppo e l'uso di schemi di flusso di carico ottimali consentono di ridurre
+costi di trasporto</p>
                                 
-                                <h3>Immagine del risultato<!-- Result image --></h3>
+                                <h3 class="lang" key="result__image">Immagine del risultato</h3>
                                 <img src="assets/img/Result.png" alt="" class="project__result-img">
   
                 </ul>
@@ -1032,27 +1005,25 @@
            <div class="services__content">
             <div>
               <i class="uil uil-sitemap services__icon"></i>
-            <h3 class="services__title">Architettura del progetto<!-- Project Architecture --></h3>
+            <h3 class="services__title lang" key="architetcure__title">Architettura del progetto</h3>
           </div>
   
           <span class="button button--flex button--small button--link services__button">
-            Visualizza di più<!-- View More -->
+           <p class="lang" key="view__more"> Visualizza di più</p>
             <i class="uil uil-arrow-right"></i>
           </span>
   
           <div class="services__modal">
             <div class="services__modal-content">
-              <h4 class="services__modal-title">Architettura del progetto<!-- Project Architecture --></h4>
+              <h4 class="services__modal-title lang" key="architetcure__title">Architettura del progetto</h4>
               <i class="uil uil-times services__modal-close"></i>
   
               <ul class="services__modal-services grid">
-                <p>Ho creato l'algoritmo di calcolo, i risultati vengono archiviati nel database in base a: regole "database in forma normale",
+                <p class="lang" key="architetcure__info">Ho creato l'algoritmo di calcolo, i risultati vengono archiviati nel database in base a: regole "database in forma normale",
                   e dopo, i dati dal database vengono visualizzati nell'interfaccia utente
-                  <!-- I created calculating algorithm, results store in database by: 'normal-form database' rules,
-                  and after, data from database shows in user interface -->
                 </p>
 
-                <h3>Dati del database<!-- Database data --></h3>
+                <h3 class="lang" key="database__data">Dati del database</h3>
                 <img src="assets/img/DB-data.png" alt="" class="project__DB-img">
               </ul>
   
@@ -1065,27 +1036,24 @@
          <div class="services__content">
           <div>
             <i class="uil uil-window services__icon"></i>
-          <h3 class="services__title">Interfaccia utente<!-- User Interface --></h3>
+          <h3 class="services__title lang" key="user__interface">Interfaccia utente</h3>
         </div>
   
         <span class="button button--flex button--small button--link services__button">
-          Visualizza di più<!-- View More -->
+         <p class="lang" key="view__more"> Visualizza di più</p>
           <i class="uil uil-arrow-right"></i>
         </span>
   
         <div class="services__modal">
           <div class="services__modal-content">
-            <h4 class="services__modal-title">Interfaccia utente<!-- User Interface --></h4>
+            <h4 class="services__modal-title lang" key="user__interface">Interfaccia utente</h4>
             <i class="uil uil-times services__modal-close"></i>
   
             <ul class="services__modal-services grid">
-              <p>Questa è l'interfaccia utente! <br>
-                Qui puoi vedere tutti i dati e controllare il processo
-                <!-- This is the user interface! <br>
-                Here you can see all the data and control the process -->
-              </p>
+              <p class="lang" key="interface__description1">Questa è l'interfaccia utente! </p>
+              <p class="lang" key="interface__description2">Qui puoi vedere tutti i dati e controllare il processo</p>
 
-              <h3>Immagine dell'interfaccia<!-- Interface image --></h3>
+              <h3 class="lang" key="interface__image">Immagine dell'interfaccia</h3>
                                 <img src="assets/img/Menu.png" alt="" class="project__menu-img">
 
             </ul>
@@ -1100,8 +1068,8 @@
 
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contattami<!-- Contact Me --></h2>
-        <span class="section__subtitle">Scrivimi<!-- Write Me --></span>
+        <h2 class="section__title lang" key="contactme__nav">Contattami</h2>
+        <span class="section__subtitle lang" key="write__me">Scrivimi</span>
 
         <div class="contact__container container grid">
           <div>
@@ -1110,7 +1078,7 @@
               <i class="uil uil-incoming-call contact__icon"></i>
 
               <div>
-                <h3 class="contact__title">Chiamami<!-- Call Me --></h3>
+                <h3 class="contact__title lang" key="call__me">Chiamami</h3>
                 <span class="contact__subtitle">370-114-2294</span>
               </div>
             </div>
@@ -1139,7 +1107,7 @@
             <div class="contact__inputs grid">
               
               <div class="contact__content">
-                <label for="" class="contact__label">Nome<!-- Name --></label>
+                <label for="" class="contact__label lang" key="customer__name">Nome</label>
                 <input id ="customerName" type="text" class="contact__input">
               </div>
               <div class="contact__content">
@@ -1148,18 +1116,19 @@
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Argomento<!-- Topic --></label>
+              <label for="" class="contact__label lang" key="topic">Argomento</label>
               <input id="topicMessage" type="text" class="contact__input">
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Messaggio<!-- Message --></label>
+              <label for="" class="contact__label lang" key="message">Messaggio</label>
               <textarea name="" id="message" cols="0" rows="7" class="contact__input"></textarea>
             </div>
 
              
             <div>
                 <button type="submit" class="button">
-              <a  class="button ">Invia messaggio<!-- Send Message -->
+              <a  class="button button--flex">
+                <p class="lang" key="seng__message">Invia messaggio</p> 
                 <i class="uil uil-message button__icon"></i>
               </a>
             </button>
@@ -1196,19 +1165,19 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Kostantin0</h1>
-            <span class="footer__subtitle">Software Ingegnere<!-- Engineer --></span>
+            <h1 class="footer__title lang" key="name">Kostantino</h1>
+            <span class="footer__subtitle lang" key="education">Software Ingegnere</span>
           </div>
 
           <ul class="footer__links">
             <li>
-              <a href="#services" class="footer__link">Servizi<!-- Services --></a>
+              <a href="#services" class="footer__link lang" key="services__nav">Servizi</a>
             </li>
             <li>
-              <a href="#portfolio" class="footer__link">Progetti<!-- Portfolio --></a>
+              <a href="#portfolio" class="footer__link lang" key="portfolio__nav">Progetti</a>
             </li>
             <li>
-              <a href="#contact" class="footer__link">Contattami<!-- Contact Me --></a>
+              <a href="#contact" class="footer__link lang" key="contactme__nav">Contattami</a>
             </li>
           </ul>
 
@@ -1245,5 +1214,502 @@
     
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      /*const langEl = document.querySelector('.language__wrap');
+      const link = document.querySelectorAll('a');
+      const titleEl = document.querySelector('.home__title');
+
+      link.forEach(el =>{
+        el.addEventListener('click', ()=>{
+          langEl.querySelector('.active').classList.remove('active');
+          el.classList.add('active');
+
+          const attr = el.getAttribute('language');
+          titleEl.textContent = languageData[attr].home__title;
+
+        })
+      });*/
+
+      $(function(){
+        $('.translate').click(function(){
+          var lang = $(this).attr('id');
+
+          $('.lang').each(function(index, element){
+            $(this).text(languageData[lang][$(this).attr('key')])
+          });
+        });
+      });
+
+      var myBr = document.createElement('br');
+      
+      var languageData={
+        'english':{
+            'site__name':'Web portfolio site',
+            'name':'Kostantin',
+            'home__nav': 'Home',
+            'about__nav': 'About',
+            'skills__nav': 'Skills',
+            'services__nav': 'Services',
+            'portfolio__nav': 'Portfolio',
+            'contactme__nav': 'Contact Me',
+            //home
+            'home__title': 'Welcome!',
+            'home__creeting': 'I am Konstantin, I created this page to show my skills and experience',
+
+            'home__description': 'There are many interesting things in the world,'+
+             'and they all have cycles,'+
+            'you just have to recognize them.' +
+           'So let`s find an algorithm for joint success with you and loop it',
+           
+           'contact__btn': 'Contact Me',
+           'home__scroll': 'Scroll down',
+           //about
+           'about__title': 'About Me',
+           'about__subtitle': 'My introduction',
+           'year__exp': 'Year' +
+            '\n Java Experience',
+           'projects__count': 'Projects',
+           'language__count': 'Languages',
+           'about__description': 'I am a universal person',
+           
+           'about__info': '\nDevelopment of software solutions and Process automation'+
+           '\nMarketing solutions '+
+           '\nManagement of social networks '+
+           '\nYeah thats all about me!',
+
+           'download__cv': 'Download CV',
+           //skills
+            'skills__title': 'Skills',
+            'skills__subtitle': 'My skills',
+            'hard__skills': 'Hard skills',
+            'database__skill': 'Databases',
+            'database__subtitle':'Development environment and query languages',
+            'about__database': 'Database is an organized collection of data \nstored and accessed electronically',
+            
+            'prog__principle': 'Programing Principles',
+            'about__principle': 'The principles are used for the design and development of software systems that'+ 
+            ' can be developed, expanded and maintained for a long time',
+            
+            'architect__skill': 'Architecture',
+            'architect__subtitle':'Projecting program architecture',
+            'about__architect': 'Projecting architecture is optimizing program workflow',
+            'mvc': 'MVC architecture',
+            'mvc__about': `Model-View-Controller pattern which used to implement user interfaces, 
+             data, and controlling logic`,
+             'dao_info': `Data Access Object - isolation the application/business layer from the persistence layer`,
+             
+             'web__skill': 'WEB Development',
+             'web__subtitle':'Creating websites or web applications',
+             'web__info':'Web development languages',
+             
+             'salesforce__info': 'Knowledge of trailheads',
+             'admin':'Administrator beginner',
+             'dev': 'Developer beginner',
+             'aura':' Aura components basics',
+             'lwc':'Build lightning Web components',
+             
+             'language__skill':'Languages',
+             'eng':'English:  Upper - Intermediate',
+             'ita':'Italy: Beginner',
+             'ua':'Ukrainian: Native speaker',
+             'rus':'Russian: Advanced',
+
+             'important__knowledge':'Important knowledge',
+             'knowledge__subtitle':'You must see it',
+             'dynamic__prog':'Dynamic Programing',
+             'dynamic__info':'Simplifying a complex problem by dividing it into simpler tasks, in a recursive way',
+             'interfaces':'Interfaces',
+             'interfaces__info':'A set of tools for creating a graphical interface in the appropriate languages',
+             'marketing':'Marketing solutions',
+             'design':'Design Creation',
+             //Soft skills
+             'soft__skills':'Soft skills',
+             'friendly':'Friendly',
+             'higher__learning':'Higher learning',
+             'problem__solving':'Problem resolver',
+             'powerful':'Powerful and persistence',
+             'critical__think':'Critical thinking',
+             'emotional__intelligence':'Emotional intelligence',
+             //Qualification
+             'qualification__title':'Qualification',
+             'qualification__subtitle':'My personal journey',
+             'graduation__qualification':' Software \n Engineering \n Education',
+             'work__qualification':'Work',
+             //education
+             'solo__proj':'Personal - Course Projects',
+             'team__proj':'Team - Course Projects',
+             'company__proj':'Tests and projects from companies',
+             'pet__proj':'Pet projects',
+             //work
+             'pet__info':'Gaining experience while solving test tasks',
+             'traieeshep':'Traineeship',
+             'traieeshep__info':'Discipline, business relations and time management',
+             'comercial__proj':'Commercial Projects',
+             'comercial__info':'Coverage of customer needs, settings for ease of use',
+             //services
+             'services__title':'Services',
+             'services__subtitle':'What i Offer',
+             'prog__service':'Programing',
+             'view__more':'View More',
+             'prog__principles':'Writing program using SOLID and object oriented - approach',
+             'prog__architecture':'Projected MVC architecture using DAO pattern and connecting to database',
+             'prog__interface':'Creating user interfaces',
+             'database__operations':'CRUD operations with database from IDE',
+             'site__creation':'Writing simple sites',
+            
+             'admin__services':'Creating and basic customization application, like Administrator beginner',
+             'dev__services':'Controlling workflow, like Developer beginner',
+             'component__services':'Basic development and customization: LWC and Aura component',
+             
+             'customer__services':'Content and customer \nengagement',
+             'customer__service':'Content and customer engagement',
+             //portfolio
+             'portfolio__title':'Portfolio',
+             'portfolio__subtitle':'Most recent project',
+             'cheap__delivery':'Most cheap delivery',
+             'proj__description':' A program that takes: quantities in stock and orders in supermarkets,'+
+             ' and calculates the cheapest delivery plan',
+
+             'info__subtitle':'About Project',
+             'proj__info1':`Solving the problem of the optimal plan for transporting the product (s)
+             from the points of departure to the points of consumption.`, 
+             'proj__info2':`The development and use of optimal cargo flow schemes allow to reduce
+             transportation costs`,
+             'result__image':'Result image',
+
+             'architetcure__title':'Project Architecture',
+             'architetcure__info':`I created calculating algorithm, results store in database by: 'normal-form database' rules,
+             and after, data from database shows in user interface`,
+             'database__data':'Database data',
+
+             'user__interface':'User Interface',
+             'interface__description1':'This is the user interface!',
+             'interface__description2':'Here you can see all the data and control the process',
+             'interface__image':'Interface image',
+             //contact me
+             'write__me':'Write Me',
+             'call__me':'Call Me',
+             
+             'customer__name':'Name',
+             'topic':'Topic',
+             'message':'Message',
+             'seng__message':'Send Message',
+             //footer
+             'education':'Software Engineer'
+        },
+
+        "italian":{
+            "site__name":"Sito Web portfolio",
+            "name":"Kostantino",
+            'home__nav': 'Pagina iniziale',
+            'about__nav': 'Su di me',
+            'skills__nav': 'Abilità',
+            'services__nav': 'Servizi',
+            'portfolio__nav': 'Progetti',
+            'contactme__nav': 'Contattami',
+
+            //home
+            'home__title': 'Benvenuto!',
+            'home__creeting': 'Sono Konstantin, ho creato questa pagina per mostrare le mie capacità ed esperienza',
+
+            'home__description': 'Ci sono molte cose interessanti nel mondo, e tutte hanno dei cicli,'+
+            ' devi solo riconoscerli.'+
+            ' Quindi troviamo un algoritmo per il successo congiunto con te e cicli questo',
+           
+            'contact__btn': 'Contattami',
+            'home__scroll': 'Scorrere verso il basso',
+           //about
+            'about__title': 'Su di me',
+            'about__subtitle': 'La mia introduzione',
+            'year__exp': 'Anno'+
+            '\n Java Esperienza',
+            'projects__count': 'Progetti',
+            'language__count': 'Le lingue',
+            'about__description': 'Sono una persona universale',
+            
+            'about__info': '\nSviluppo di soluzioni software e Process automation'+
+            '\nSoluzioni di marketing'+
+            '\nGestione dei social network'+
+            '\nSì, è tutto su di me!',
+
+            'download__cv': 'Scarica CV',
+            //skills
+            'skills__title': 'Abilità',
+            'skills__subtitle': 'Mia Abilità',
+            'hard__skills': 'Conoscenza professionale',
+            'database__skill': 'Banche dati',
+            'database__subtitle': 'Ambiente di sviluppo e linguaggi di interrogazione',
+            'about__database':'Il database è una raccolta organizzata di dati \narchiviati e accessibili elettronicamente',
+            'prog__principle': 'Principi di programmazione',
+            'about__principle': 'I principi sono utilizzati per la progettazione e lo sviluppo di sistemi software che'+
+            ' può essere sviluppato, ampliato e mantenuto a lungo',
+           
+            'architect__skill': 'Architettura',
+            'architect__subtitle': 'Progettazione dell`architettura del programma',
+            'about__architect': 'L`architettura di proiezione sta ottimizzando il flusso di lavoro del programma',
+            'mvc': 'MVC architettura',
+            'mvc__about':`Model-View-Controller 
+            -odello utilizzato per implementare le interfacce utente,
+            dati e logica di controllo`,
+            'dao_info': `Data Access Object  
+            - isolare il livello applicativo/aziendale dal livello di persistenza`,
+            'web__skill': 'Sviluppo web',
+            'web__subtitle': 'Creazione di siti web o applicazioni web',
+            'web__info':'Linguaggi di sviluppo web',
+
+            'salesforce__info': 'Conoscenza di trailheads',
+            'admin':'Amministratore principiante',
+            'dev':'Sviluppatore principiante',
+            'aura': 'Nozioni di base sui componenti Aura',
+            'lwc':'Costruisci componenti Web lightning',
+            
+            'language__skill':'Le lingue',
+            'eng':'Inglese: superiore - intermedio',
+            'ita':'Italia: principiante',
+            'ua':'Ucraino: madrelingua',
+            'rus':'Russo: avanzato',
+
+            'important__knowledge':'Conoscenza importante',
+            'knowledge__subtitle':'Tu devi vederlo',
+            'dynamic__prog':'Programmazione dinamica',
+            'dynamic__info':'Semplificare un problema complesso suddividendolo in compiti più semplici, in modo ricorsivo',
+            'interfaces':'Interfacce',
+            'interfaces__info':'Un insieme di strumenti per creare un`interfaccia grafica nelle lingue appropriate',
+            'marketing':'Soluzioni di marketing',
+            'design':'Design Creazione',
+            //soft skills
+            'soft__skills':'Abilità personali',
+            'friendly':'Amichevole',
+            'higher__learning':'Apprendimento superiore',
+            'problem__solving':'Risolutore di problemi',
+            'powerful':'Potente e tenace',
+            'critical__think':'Pensiero critico',
+            'emotional__intelligence':'Intelligenza emotiva',
+            //QUALIFICATION
+            'qualification__title':'Qualificazione',
+            'qualification__subtitle':'Il mio viaggio personale',
+            'graduation__qualification':' Software \n Ingegneria \n Educazione',
+            'work__qualification':'lavoro',
+            //education
+            'solo__proj':'Personale - Progetti del corso',
+            'team__proj':'Progetto del corso di squadra',
+            'company__proj':'Test e progetti aziendali',
+            'pet__proj':'Compiti di prova',
+            //work
+            'pet__info':'Acquisire esperienza durante la risoluzione di compiti di test',
+            'traieeshep':'Tirocinio',
+            'traieeshep__info':'Disciplina, relazioni commerciali e gestione del tempo',
+            'comercial__proj':'Progetti commerciali',
+            'comercial__info':'Copertura delle esigenze del cliente, impostazioni per facilità d`uso',
+            //services
+            'services__title':'Servizi',
+            'services__subtitle':'Cosa offro',
+
+             'prog__service':'Programmazione',
+             'view__more':'Visualizza di più',
+             'prog__principles':'Scrittura di programmi con approccio SOLID e orientato agli oggetti',
+             'prog__architecture':'Architettura MVC progettata utilizzando il modello DAO e la connessione al database',
+             'prog__interface':'Creazione dell`interfaccia utente',
+             'database__operations':'Operazioni CRUD con database da IDE',
+             'site__creation':'Scrivere siti semplici',
+             
+             'admin__services':'Creazione e personalizzazione di base dell`applicazione, come amministratore principiante',
+             'dev__services':'Controllo del flusso di lavoro, come Developer principiante',
+             'component__services':'Sviluppo e personalizzazione di base: componente LWC e Aura',
+             'customer__services':'Contenuti \ne coinvolgimento \ndel cliente',
+             'customer__service':'Contenuti e coinvolgimento del cliente',
+             //portfolio
+             'portfolio__title':'Progetti',
+             'portfolio__subtitle':'Progetto più recente',
+             'cheap__delivery':'Consegna più economica',
+             'proj__description':' Un programma che prende: quantità in stock e ordini nei supermercati,'+
+             ' e calcola il piano di consegna più economico',
+
+             'info__subtitle':'Informazioni sul progetto',
+             'proj__info1':`Risolvere il problema del piano ottimale per il trasporto del/i prodotto/i
+             dai punti di partenza ai punti di consumo.`, 
+             'proj__info2':`Lo sviluppo e l'uso di schemi di flusso di carico ottimali consentono di ridurre
+             costi di trasporto`,
+             'result__image':'Immagine del risultato',
+             
+             'architetcure__title':'Architettura del progetto',
+             'architetcure__info':`Ho creato l'algoritmo di calcolo, i risultati vengono archiviati nel database in base a: regole "database in forma normale",
+             e dopo, i dati dal database vengono visualizzati nell'interfaccia utente`,
+             'database__data':'Dati del database',
+
+             'user__interface':'Interfaccia utente',
+             'interface__description1':'Questa è l`interfaccia utente!',
+             'interface__description2':'Qui puoi vedere tutti i dati e controllare il processo',
+             'interface__image':'Immagine dell`interfaccia',
+             //contact me
+             'write__me':'Scrivimi',
+             'call__me':'Chiamami',
+
+             'customer__name':'Nome',
+             'topic':'Argomento',
+             'message':'Messaggio',
+             'seng__message':'Invia messaggio',
+             //footer
+             'education':'Software Ingegnere'
+        },
+
+        "ukrainian":{
+          'site__name':'Портфоліо веб сайт ',
+          'name':'Костянтин',
+          'home__nav': 'Головна',
+          'about__nav': 'Про мене',
+          'skills__nav': 'Навички',
+          'services__nav': 'Послуги',
+          'portfolio__nav': 'Портфоліо',
+          'contactme__nav': 'Зв`язатися зі мною',
+          //home
+          'home__title': 'Вітаю!',
+          'home__creeting': 'Я Костянтин, i я створив цей сайт, щоб показати мої навички та досвід',
+
+          'home__description': 'В світі є багато цікавих речей '+
+           'i всі вони мають цикли,'+
+          ' їх потрібно лише розпізнати.' +
+         ' Тож давайте знайдемо наш спільний алгоритм успіху та зациклимо його!',
+         
+         'contact__btn': 'Зв`язатися зі мною',
+         'home__scroll': 'Прокрутити вниз',
+         //about
+         'about__title': 'Про мене',
+         'about__subtitle': 'Про мене',
+         'year__exp': 'Рік' +
+          '\n досвіду з Java',
+         'projects__count': 'Проектів',
+         'language__count': 'Мови',
+         'about__description': 'Я універсальна людина',
+         
+         'about__info': '\nРозробка програмних рішень та автоматизація процесів'+
+         '\nМаркетинговi рішення'+
+         '\nУправлiння соцмережами '+
+         '\nТак це все про мене!',
+
+         'download__cv': 'Завантажити резюме',
+         //skills
+          'skills__title': 'Навички',
+          'skills__subtitle': 'Мої Навички',
+          'hard__skills': 'Професійні знання',
+          'database__skill': 'Бази даних',
+          'database__subtitle':'Середовище розробки та мови запросів',
+          'about__database': 'База даних - це організована колекція даних,\n які зберігаються та доступні в електронному вигляді',
+          
+          'prog__principle': 'Принципи програмування',
+          'about__principle': 'Принципи використовуються для дизайну та розробки програмного забезпечення, яке'+ 
+          ' може розроблятись, розширюватись та підтримуватись тривалий час',
+          
+          'architect__skill': 'Архітектура',
+          'architect__subtitle':'Проектування програмної архітектури',
+          'about__architect': 'Проектування архітектури оптимізує робочий процесс програми',
+          'mvc': 'MVC архітектура',
+          'mvc__about': `Model-View-Controller - паттерн який використовується для реалізації інтерфейсу користувача, 
+           збереження данних, та логіки їх обробки`,
+           'dao_info': `Data Access Object - ізоляція программного та бізнес рівня, від рівня збереження даних`,
+           
+           'web__skill': 'WEB Розробка',
+           'web__subtitle':'Створення веб сайтів та веб додатків',
+           'web__info':'Мови веб розробки',
+           
+           'salesforce__info': 'Знання наступних trailheads',
+           'admin':'Адміністратор початківець',
+           'dev': 'Розробник початківець',
+           'aura':'Основи Aura компонентів',
+           'lwc':'Побудова lightning Web компонентів',
+           
+           'language__skill':'Мови',
+           'eng':'Англійська: Вище середнього',
+           'ita':'Італійська: Початківець',
+           'ua':'Українська: Рідна мова',
+           'rus':'Російська: Просунутий',
+
+           'important__knowledge':'Важливі знання',
+           'knowledge__subtitle':'Ви повинні це побачити!',
+           'dynamic__prog':'Динамічне програмування',
+           'dynamic__info':'Спрощення комплексної проблеми, шляхом розбиття її на прості задачі рекурсивним шляхом',
+           'interfaces':'Інтерфейси',
+           'interfaces__info':'Набір інструментів для створення графічного інтерфейсу у відповідних мовах',
+           'marketing':'Маркетингові рішення',
+           'design':'Створення дизайну',
+           //Soft skills
+           'soft__skills':'Особисті якості',
+           'friendly':'Дружній',
+           'higher__learning':'Вища освіта',
+           'problem__solving':'Вирішувач проблем',
+           'powerful':'Енергійний та наполегливий',
+           'critical__think':'Критичне мислення',
+           'emotional__intelligence':'Емоційний інтелект',
+           //Qualification
+           'qualification__title':'Кваліфікація',
+           'qualification__subtitle':'Моя особиста подорож',
+           'graduation__qualification':' Інженерія \n Програмного \n Забезпечення',
+           'work__qualification':'Робота',
+           //education
+           'solo__proj':'Персональні - Курсові проекти',
+           'team__proj':'Командні - Курсові проекти',
+           'company__proj':'Тести і проекти від компаній',
+           'pet__proj':'Особисті проекти',
+           //work
+           'pet__info':'Отримання навичок під час вирішення тестових задач',
+           'traieeshep':'Стажування',
+           'traieeshep__info':'Дисципліна, ділові відносини та управління часом',
+           'comercial__proj':'Комерційні проекти',
+           'comercial__info':'Покриття потреб користувача, налаштування для зручного використання',
+           //services
+           'services__title':'Послуги',
+           'services__subtitle':'Що я пропоную',
+           'prog__service':'Програмування',
+           'view__more':'Показати більше',
+           'prog__principles':'Написання програм використовуючи SOLID та об`єктно орієнтований підхід',
+           'prog__architecture':'Проектування MVC архітектури, використовуючи DAO паттерн та підключення до баз даних',
+           'prog__interface':'Створення користувацьких інтерфейсів',
+           'database__operations':'CRUD операції з базами даних з середовища розробки',
+           'site__creation':'Написання простих сайтів',
+          
+           'admin__services':'Створення та базове налаштування додатків як адміністратор початківець',
+           'dev__services':'Контроль робочого процесу як розробник початківець',
+           'component__services':'Базові знання розробки та налаштування: LWC та Aura компонентів',
+           
+           'customer__services':'Контент та залучення \nклієнтів',
+           'customer__service':'Контент та залучення клієнтів',
+           //portfolio
+           'portfolio__title':'Портфоліо',
+           'portfolio__subtitle':'Самий новий проект',
+           'cheap__delivery':'Найдешевша доставка',
+           'proj__description':' Програма яка отримує: кількість на складі та зомовлення супермаркетів,'+
+           ' і підраховує найдешевший спосіб доставки',
+
+           'info__subtitle':'Про проект',
+           'proj__info1':`Вирішення проблеми економії бюджету, при доставці товару, шляхом створення плану доставок
+           з пунктів відправлення до пунктів замовлення `, 
+           'proj__info2':`Розробка схеми оптимальної доставки по мінімальній ціні загальних доставок`,
+           'result__image':'Відображення результату',
+
+           'architetcure__title':'Архітектура проекту',
+           'architetcure__info':`Я створив алгоритм підрахунку, результати якого зберігаються в базі даних по правилам 'нормальних-форм баз даних',
+           і після, данні - баз даних відображаються в користувацькому інтерфейсі`,
+           'database__data':'Данні - баз даних',
+
+           'user__interface':'Користувацький інтерфейс',
+           'interface__description1':'Це користувацький інтерфейс!',
+           'interface__description2':'Тут ви можете переглянути всі данні та контролювати процес',
+           'interface__image':'Інтерфейс',
+           //contact me
+           'write__me':'Написати мені',
+           'call__me':'Подзвонити мені',
+           
+           'customer__name':'Ім`я',
+           'topic':'Тема',
+           'message':'Повідомлення',
+           'seng__message':'Надіслати повідомлення',
+           //footer
+           'education':'Інженер програмного забезпечення'
+        }
+    }
+    </script>
+
   </body>
 </html>
